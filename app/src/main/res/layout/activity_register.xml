@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frontend.authentication.RegisterActivity">
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_baseline_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/md_theme_light_tertiary" />
+
+    <ImageView
+        android:id="@+id/img_logo_app"
+        android:layout_width="149dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/well_logo_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_back" />
+
+    <com.firmannurcahyo.submission.frontend.model.CustomView
+        android:id="@+id/cv_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_app" />
+
+    <com.firmannurcahyo.submission.frontend.model.CustomView
+        android:id="@+id/cv_input_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="@id/cv_username"
+        app:layout_constraintStart_toStartOf="@id/cv_username"
+        app:layout_constraintTop_toBottomOf="@+id/cv_username" />
+
+    <com.firmannurcahyo.submission.frontend.model.CustomView
+        android:id="@+id/cv_input_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/cv_username"
+        app:layout_constraintStart_toStartOf="@id/cv_username"
+        app:layout_constraintTop_toBottomOf="@id/cv_input_email" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="229dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/seed"
+        android:text="Register"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/cv_input_password"
+        app:layout_constraintStart_toStartOf="@+id/cv_input_password"
+        app:layout_constraintTop_toBottomOf="@+id/cv_input_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

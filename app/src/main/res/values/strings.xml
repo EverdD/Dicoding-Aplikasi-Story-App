@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Submission</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="not_permission">No Permission</string>
+    <string name="home">"Well"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="story_add">"Tambahkan Story"</string>
+    <string name="detail_title">Title Story</string>
+    <string name="well_story">Well Story</string>
+    <string name="invalid_email">Not a valid email</string>
+    <string name="image_all">image/*</string>
+    <string name="gallery">Gallery</string>
+    <string name="choose_picture">Choose</string>
+    <string name="back_camera">Flip</string>
+    <string name="image_jpeg">image/jpeg</string>
+    <string name="text_plain">text/plain</string>
+    <string name="failed_show_camera">Gagal memunculkan kamera.</string>
+    <string name="photo">photo</string>
+</resources>
